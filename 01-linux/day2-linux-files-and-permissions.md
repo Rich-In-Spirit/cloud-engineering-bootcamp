@@ -1,7 +1,7 @@
 # Day 2 Linux Files and Permissions
 
 ## Date
-May 5, 2026
+May 2, 2026
 
 ## Objective
 
