@@ -73,10 +73,10 @@ exit
 - ss can be used to check listening network ports.
 
 ## What Confused Me
--SSH was installed but initially showed as inactive.
--Ubuntu appeared to use socket activation for SSH, but I manually started and enabled the SSH service to make the behavior clearer.
--I did not initially understand why I could not just SSH directly into 10.0.2.15.
--The ss -tulnp | grep ssh command did not show output until I used sudo and/or searched by port :22.
+- SSH was installed but initially showed as inactive.
+- Ubuntu appeared to use socket activation for SSH, but I manually started and enabled the SSH service to make the behavior clearer.
+- I did not initially understand why I could not just SSH directly into 10.0.2.15.
+- The ss -tulnp | grep ssh command did not show output until I used sudo and/or searched by port :22.
 
 ## Why This Matters for Cloud Engineering 
 - Cloud engineers often manage Linux servers remotely using SSH. This lab simulates the same pattern used when connecting to cloud VMs like AWS EC2 instances or Azure Linux VMs.
