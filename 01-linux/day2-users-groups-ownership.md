@@ -122,14 +122,14 @@ devuser successfully wrote to the shared file
 ### Ownership 
 Linux files and directories have an owner and a group. 
 Example: 
-````root cloud team````
+````root cloudteam````
 This means: 
 ````
 Owner = root
 Group = cloudteam
 ````
 ````chown root:cloudteam /srv/cloudteam````
-This change the directory ownership so that the owner was ````root````and the group was ````cloud team````.
+This change the directory ownership so that the owner was ````root````and the group was ````cloudteam````.
 
 ````chmod 2770 /srv/cloudteam````
 This set permissions on the shared directory:
