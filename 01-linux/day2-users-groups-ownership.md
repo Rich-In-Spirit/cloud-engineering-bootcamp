@@ -1,7 +1,7 @@
 # Day 2 Users, Groups, and Ownership Lab
 
 ## Date
-May 5, 2026
+May 2, 2026
 
 ## Objective
 
