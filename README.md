@@ -21,4 +21,4 @@ Build real hands-on cloud engineering and DevOps competence through Linux, AWS, 
 
 ## Current Focus
 
-Day 1: Setup, GitHub structure, Linux lab preparation, and cloud engineering baseline.
+Day 2: Get Comfortable navigating Linux, reading file structure, creating/deleting/moving files, and understanding basic permissions 
