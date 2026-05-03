@@ -21,4 +21,4 @@ Build real hands-on cloud engineering and DevOps competence through Linux, AWS, 
 
 ## Current Focus
 
-Day 2: Get Comfortable navigating Linux, reading file structure, creating/deleting/moving files, and understanding basic permissions 
+Day 3: services,logs, ports, and troubleshooting
