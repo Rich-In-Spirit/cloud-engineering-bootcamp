@@ -169,3 +169,38 @@ Cloud engineers frequently troubleshoot Linux servers, web services, EC2 Instanc
 ## Next Step
 Practice editing a basic NGINX web page, restarting the service, and testing the change with `curl`
 
+## Bonus: Edited Default NGINX Web Page
+
+### Commands Run
+
+```bash
+ls -l /var/www/html
+
+sudo cp /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.html.bak
+ls -l /var/www/html
+
+echo "<h1>Sal's Cloud Engineering Lab</h1><p>NGINX is running on my Ubuntu VM.</p>" | sudo tee /var/www/html/index.nginx-debian.html
+
+curl localhost
+
+sudo systemctl restart nginx
+systemctl status nginx
+curl localhost
+
+sudo cp /var/www/html/index.nginx-debian.html.bak /var/www/html/index.nginx-debian.html
+curl localhost
+```
+
+## What I Learned
+- `/var` stores variable/changing system and application data.
+- `/var/www/html` is the default web root directory for NGINX on Ubuntu.
+- I needed `sudo` because `/var/www/html` is a protected system/application path.
+- Creating a `.bak` backup before editing a file is a good safety habit.
+- `tee` can write piped command output into a file.
+- `curl localhost` confirmed that NGINX served the updated HTML content locally.
+- Restarting NGINX confirmed the service still worked after the page edit.
+
+
+## Why This Matters
+
+This was a small example of a server-side web change: locate the web root, back up the original file, modify content, verify the service response, and restore if needed.
