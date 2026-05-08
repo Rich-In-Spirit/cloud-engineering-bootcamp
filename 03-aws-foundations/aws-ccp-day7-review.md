@@ -38,3 +38,44 @@ For the EC2 NGINX project:
 ```text
 SSH   TCP 22   My public IP only
 HTTP  TCP 80   Anywhere
+```
+
+## Root MFA
+
+Root MFA means enabling multi-factor authentication on the AWS root account.
+
+The root account has powerful account-level permissions, so it should be protected and not used for daily work.
+
+## AWS Budgets
+
+AWS Budgets help track cost and usage.
+
+A budget alert can notify me when spending approaches or exceeds a threshold.
+
+A budget alert does not automatically stop resources by default.
+
+## Shared Responsibility Model
+
+AWS is responsible for security of the cloud.
+
+I am responsible for security in the cloud.
+
+AWS responsibilities include:
+```text
+Physical data centers
+Hardware
+Global infrastructure
+Managed service infrastructure
+```
+My responsibilites include:
+```text
+MFA
+IAM configuration
+Security Group rules
+SSH key protection
+EC2 cleanup
+Cost monitoring
+Not opening unnecessary ports
+```
+## Key Takeaway 
+Cloud engineering is not just building resources. It also includes securing access, controlling cost, monitoring usage, and cleaning up resources.
