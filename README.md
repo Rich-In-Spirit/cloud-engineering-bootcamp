@@ -21,4 +21,4 @@ Build real hands-on cloud engineering and DevOps competence through Linux, AWS, 
 
 ## Current Focus
 
-Day 3: services,logs, ports, and troubleshooting
+Day 9: AWS CloudShell and S3 Basics Lab
